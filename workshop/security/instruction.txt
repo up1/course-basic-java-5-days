@@ -10,5 +10,5 @@ $curl myClient:myClientSecret@localhost:8080/oauth/token -d grant_type=password 
 {"access_token":"abc",
 "token_type":"bearer"}% 
 
-# 4. Call service with Authorization
+# 4. Call service with Authorization with token_type and access_token
 $curl -H "Authorization: Bearer abc" localhost:8080/
