@@ -3,6 +3,11 @@
 ## List of workshops
 * [Day 1](https://github.com/up1/workshop-basic-day-01)
 
+
+## Kata
+* [Code Wars](https://www.codewars.com/)
+* [Hacker Rank](https://www.hackerrank.com/)
+
 ## Outlines
 
 * Day 1
