@@ -10,7 +10,7 @@
     * Control flow 
     * Naming conventions
     * Package
-  * Objet-Oriented Concepts
+  * Object-Oriented Concepts
     * Class
     * Constructor
     * Inheritance
