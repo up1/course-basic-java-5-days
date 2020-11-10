@@ -1,5 +1,10 @@
 # Course Java 5 days
 
+## List of workshops
+* [Day 1](https://github.com/up1/workshop-basic-day-01)
+
+## Outlines
+
 * Day 1
   * Introduction to Java
   * Fundamental of Java
