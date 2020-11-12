@@ -1,13 +1,14 @@
 # Course Java 5 days
 
 ## List of workshops
-* [Day 1](https://github.com/up1/workshop-basic-day-01)
+* [Day 1 and Day 2](https://github.com/up1/workshop-basic-day-01)
 
 
-## Kata
+## Kata and Resources
 * [Work Sheet](https://bit.ly/3lpkPn9)
 * [Code Wars](https://www.codewars.com/)
 * [Hacker Rank](https://www.hackerrank.com/)
+* [Collection Framework](https://docs.oracle.com/javase/8/docs/technotes/guides/collections/overview.html)
 
 
 ## Outlines
