@@ -5,8 +5,10 @@
 
 
 ## Kata
+* [Work Sheet](https://bit.ly/3lpkPn9)
 * [Code Wars](https://www.codewars.com/)
 * [Hacker Rank](https://www.hackerrank.com/)
+
 
 ## Outlines
 
