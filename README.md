@@ -2,11 +2,12 @@
 
 ## List of workshops
 * [Day 1 and Day 2](https://github.com/up1/workshop-basic-day-01)
-* [Day 3](https://github.com/up1/workshop-basic-day-03)
+* [Day 3 and Day 4](https://github.com/up1/workshop-basic-day-03)
 
 ## Spring Resources
 * [Spring Boot](https://spring.io/projects/spring-boot)
 * [Spring Data](https://spring.io/projects/spring-data)
+* [Code Example](https://github.com/up1/demo-spring-testing)
 
 ## Kata and Resources
 * [Work Sheet](https://bit.ly/3lpkPn9)
