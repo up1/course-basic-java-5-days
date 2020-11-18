@@ -2,7 +2,7 @@
 
 ## List of workshops
 * [Day 1 and Day 2](https://github.com/up1/workshop-basic-day-01)
-
+* [Day 3](https://github.com/up1/workshop-basic-day-03)
 
 ## Kata and Resources
 * [Work Sheet](https://bit.ly/3lpkPn9)
