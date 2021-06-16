@@ -60,10 +60,16 @@
     * Database design
       * Normalization
       * De-nomalization
+    * Working with External APIs
+      * HttpUrlConnection
+      * HttpClient
+      * ApacheHttpClient
+      * OkHttp
+      * Retrofit
 * Day 5
     * Version Control Management with Git
     * Continuous Integration and Delivery with Jenkins
       * Principles of CI/CD
       * Design pipeline or workflow
-      * Wkrking with Jenkins
+      * Working with Jenkins
       
