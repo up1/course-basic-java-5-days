@@ -14,7 +14,8 @@
 * [Code Wars](https://www.codewars.com/)
 * [Hacker Rank](https://www.hackerrank.com/)
 * [Collection Framework](https://docs.oracle.com/javase/8/docs/technotes/guides/collections/overview.html)
-
+* [Design patterns](https://sourcemaking.com/design_patterns)
+* [Code smell](https://sourcemaking.com/refactoring/smells)
 
 ## Outlines
 
