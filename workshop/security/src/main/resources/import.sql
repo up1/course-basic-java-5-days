@@ -1,1 +1,0 @@
-insert into user(id, email, password, authorities, enabled) values(1, 'user', '$2a$10$KoxHNdhOe6OY88Ybq6T2d.SGp6lVfj5ynY/QwaO5SRk998TgnYayi', 'USER', true); -- password = 'password' BCrypt 10 hashed
