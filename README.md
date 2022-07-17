@@ -68,9 +68,7 @@
       * OkHttp
       * Retrofit
 * Day 5
-    * Version Control Management with Git
-    * Continuous Integration and Delivery with Jenkins
-      * Principles of CI/CD
-      * Design pipeline or workflow
-      * Working with Jenkins
+    * Develop RESTful API with Java and Spring Boot
+    * Spring Boot
+    * Spring Boot Tesing
       
