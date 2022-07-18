@@ -1,22 +1,5 @@
 # Course Java 5 days
 
-## List of workshops
-* [Day 1 and Day 2](https://github.com/up1/workshop-basic-day-01)
-* [Day 3 and Day 4](https://github.com/up1/workshop-basic-day-03)
-
-## Spring Resources
-* [Spring Boot](https://spring.io/projects/spring-boot)
-* [Spring Data](https://spring.io/projects/spring-data)
-* [Code Example](https://github.com/up1/demo-spring-testing)
-
-## Kata and Resources
-* [Work Sheet](https://bit.ly/3lpkPn9)
-* [Code Wars](https://www.codewars.com/)
-* [Hacker Rank](https://www.hackerrank.com/)
-* [Collection Framework](https://docs.oracle.com/javase/8/docs/technotes/guides/collections/overview.html)
-* [Design patterns](https://sourcemaking.com/design_patterns)
-* [Code smell](https://sourcemaking.com/refactoring/smells)
-
 ## Outlines
 
 * Day 1
