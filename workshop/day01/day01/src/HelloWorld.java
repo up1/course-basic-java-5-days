@@ -3,8 +3,6 @@ import static java.lang.System.*;
 public class HelloWorld {
 
     public static void main(String[] args) {
-
-
         String input = "10";
         int r1 = Integer.parseInt(input);
         int r2 = Integer.valueOf(input);
