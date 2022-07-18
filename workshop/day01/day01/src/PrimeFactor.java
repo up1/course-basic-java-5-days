@@ -9,6 +9,10 @@ public class PrimeFactor {
         System.out.println(result);
         result = p.print(16);
         System.out.println(result);
+        result = p.print(9);
+        System.out.println(result);
+        result = p.print(6);
+        System.out.println(result);
     }
 //    8
 //    8/2 = 4  => 2
@@ -17,9 +21,11 @@ public class PrimeFactor {
 
     private String print(int input) {
         String result = "";
-        while (input%2 == 0) {
-            result = result + "2";
-            input = input/2;
+        for (int primeNumber = 2; primeNumber <= 3 ; primeNumber++) {
+                while (input % primeNumber == 0) {
+                    result = result + "" + primeNumber;
+                    input = input / primeNumber;
+                }
         }
         return result;
     }
