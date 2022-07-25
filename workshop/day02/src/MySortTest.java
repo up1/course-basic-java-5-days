@@ -33,16 +33,28 @@ class MySortTest {
     @Test
     public void case03() {
         MySort mySort = new MySort();
-        List<Integer> input = new ArrayList<>();
-        input.add(2);
-        input.add(1);
-        List<Integer> expected = new ArrayList<>();
-        expected.add(1);
-        expected.add(2);
+        List<Integer> input = List.of(2, 1);
+        List<Integer> expected = List.of(1, 2);
 
         List<Integer> result = mySort.sort(input);
 
         assertEquals(expected, result);
+    }
+
+    @Test
+    public void case04() {
+        MySort mySort = new MySort();
+        List<Integer> input = toList(1, 3, 2);
+        List<Integer> expected = toList(1, 2, 3);
+        List<Integer> result = mySort.sort(input);
+        assertEquals(expected, result);
+    }
+    private List<Integer> toList(int...items) { // varargs
+        List<Integer> result = new ArrayList<>();
+        for (int item : items) {
+            result.add(item);
+        }
+        return result;
     }
 
 }
