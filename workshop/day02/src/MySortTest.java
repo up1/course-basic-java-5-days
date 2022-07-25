@@ -33,8 +33,8 @@ class MySortTest {
     @Test
     public void case03() {
         MySort mySort = new MySort();
-        List<Integer> input = List.of(2, 1);
-        List<Integer> expected = List.of(1, 2);
+        List<Integer> input = toList(2, 1);
+        List<Integer> expected = toList(1, 2);
 
         List<Integer> result = mySort.sort(input);
 
@@ -45,6 +45,15 @@ class MySortTest {
     public void case04() {
         MySort mySort = new MySort();
         List<Integer> input = toList(1, 3, 2);
+        List<Integer> expected = toList(1, 2, 3);
+        List<Integer> result = mySort.sort(input);
+        assertEquals(expected, result);
+    }
+
+    @Test
+    public void case05() {
+        MySort mySort = new MySort();
+        List<Integer> input = toList(3, 2, 1);
         List<Integer> expected = toList(1, 2, 3);
         List<Integer> result = mySort.sort(input);
         assertEquals(expected, result);

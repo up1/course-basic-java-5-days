@@ -3,12 +3,24 @@ import java.util.List;
 
 public class MySort {
     public List<Integer> sort(List<Integer> input) {
-        if((input.size() > 1) && (input.get(0) > input.get(1))) {
-            // Swap
-            int temp = input.get(0);
-            input.set(0, input.get(1));
-            input.set(1, temp);
+            /*
+            [1, 3], 2 => 1, 3, 2
+            1, [3, 2] => 1, 2, 3
+             */
+        for (int i = 0; i < input.size() - 1; i++) {
+            if (input.get(i) > input.get(i + 1)) {
+                // Swap
+                int temp = input.get(i);
+                input.set(i, input.get(i + 1));
+                input.set(i + 1, temp);
+            }
         }
         return input;
+    }
+
+    public static void main(String[] args) {
+        if(false)
+            System.out.println("Line 1");
+            System.out.println("Line 2");
     }
 }
