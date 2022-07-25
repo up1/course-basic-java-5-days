@@ -1,5 +1,9 @@
 # Course Java 5 days
 
+## Notes
+* [Day 1](https://github.com/up1/course-basic-java-5-days/tree/master/workshop/day01/day01)
+* [List of problems](https://github.com/up1/course-basic-java-5-days/wiki/List-of-Kata)
+
 ## Outlines
 
 * Day 1
