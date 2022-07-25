@@ -1,7 +1,8 @@
 class Runner {
     // Properties
-    String name;
-    int runningTimeInMinute;
+    public String name;
+    private int runningTimeInMinute;
+    protected int runningTimeInMinute2;
 
     public Runner(String name, int runningTimeInMinute) {
         this.name = name;
@@ -9,4 +10,12 @@ class Runner {
     }
 
     // Methods/ behaviors
+
+    public int getTime() {
+        return runningTimeInMinute;
+    }
+
+    public void setRunningTimeInMinute(int runningTimeInMinute) {
+        this.runningTimeInMinute = runningTimeInMinute;
+    }
 }

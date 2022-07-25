@@ -11,11 +11,12 @@ public class Marathon2 {
         runners.add(new Runner("Emma", 275));
         runners.add(new Runner("John", 243));
 
-        int minTime = runners.get(0).runningTimeInMinute;
+        int minTime = runners.get(0).getTime();
         int position = 0;
         for (int i = 0; i < runners.size(); i++) {
-            if (minTime > runners.get(i).runningTimeInMinute) {
-                minTime = runners.get(i).runningTimeInMinute;
+            int time = runners.get(i).getTime();
+            if (minTime > time) {
+                minTime = time;
                 position = i;
             }
         }
