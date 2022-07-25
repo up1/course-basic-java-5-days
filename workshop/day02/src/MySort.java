@@ -8,8 +8,8 @@ class MySortComparator implements Comparator<Integer> {
 }
 public class MySort {
     public List<Integer> sort(List<Integer> input) {
+        Collections.sort(input, new MySortComparator());
         Collections.sort(input);
-//        Collections.sort(input, new MySortComparator());
 //        for (int i = 0; i < input.size() - 1; i++) {
 //            if (input.get(i) > input.get(i + 1)) {
 //                // Swap
