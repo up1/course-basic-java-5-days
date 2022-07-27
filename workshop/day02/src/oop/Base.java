@@ -24,6 +24,6 @@ class Child2 extends Base {
 abstract class Xyz {
     abstract void call1();
     void call2() {
-
+        Xyz xyz = new Xyz();
     }
 }
