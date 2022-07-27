@@ -15,16 +15,16 @@ public class MyPromotion {
     }
 }
 
-class Promotion1 {
-    int calculateDiscount() {
-        return 100;
-    }
-}
-
-class Promotion2 {
-    int calculateDiscount() {
-        return 200;
-    }
-}
+//class Promotion1 {
+//    int calculateDiscount() {
+//        return 100;
+//    }
+//}
+//
+//class Promotion2 {
+//    int calculateDiscount() {
+//        return 200;
+//    }
+//}
 
 
