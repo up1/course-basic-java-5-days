@@ -14,7 +14,23 @@ enum OrderStatus {
     Canceled
 }
 
-public class Order {
+public abstract class Order {
     String customerEmail;
     OrderStatus orderStatus;
+
+    abstract String getSubject();
+    abstract String getBody();
+}
+
+class OrderWaiting extends Order {
+
+    @Override
+    String getSubject() {
+        return "Subject for waiting";
+    }
+
+    @Override
+    String getBody() {
+        return "Body for waiting";
+    }
 }
