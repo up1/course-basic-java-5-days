@@ -9,8 +9,8 @@ public class MyPromotion {
             Promotion1 p = new Promotion1();
             p.calculateDiscount();
         } else if(input == 2) {
-            Promotion2 p = new Promotion2();
-            p.calculateDiscount();
+//            Promotion2 p = new Promotion2();
+//            p.calculateDiscount();
         }
     }
 }
