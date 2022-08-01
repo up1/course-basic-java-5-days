@@ -1,8 +1,9 @@
 public class DemoError2 {
     public static void main(String[] args) {
+        double result = 0;
         try {
             Calculator calculator  = new Calculator();
-            double result = calculator.divide(1, 0);
+            result = calculator.divide(1, 0);
         } catch (CalculatorDivideWithZeroException e) {
             e.printStackTrace();
         }
