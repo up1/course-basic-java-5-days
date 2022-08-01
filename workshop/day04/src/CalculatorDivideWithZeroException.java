@@ -1,3 +1,2 @@
-public class CalculatorDivideWithZeroException
-        extends RuntimeException {
+public class CalculatorDivideWithZeroException extends RuntimeException {
 }
