@@ -35,4 +35,18 @@ class MyRange2Test {
         assertEquals(2, result);
     }
 
+    @Test
+    public void case05() {
+        MyRange2 range = new MyRange2("[1,5]");
+        boolean result = range.endWithKeep();
+        assertTrue(result);
+    }
+
+    @Test
+    public void case06() {
+        MyRange2 range = new MyRange2("[1,5)");
+        boolean result = range.endWithKeep();
+        assertFalse(result);
+    }
+
 }

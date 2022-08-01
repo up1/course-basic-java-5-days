@@ -16,4 +16,8 @@ public class MyRange2 {
         }
         return input.charAt(1) + 1 - 48;
     }
+
+    public boolean endWithKeep() {
+        return this.input.endsWith("]");
+    }
 }
