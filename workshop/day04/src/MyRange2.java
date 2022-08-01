@@ -27,4 +27,13 @@ public class MyRange2 {
         }
         return input.charAt(input.length()-2) - 1 - 48;
     }
+
+    public String getResult() {
+        String output = "";
+        for (int i = getStartNumber(); i <= getEndNumber() ; i++) {
+            output += i + ",";
+        }
+        output = output.substring(0, output.length()-1);
+        return output;
+    }
 }

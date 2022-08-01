@@ -63,4 +63,11 @@ class MyRange2Test {
         assertEquals(4, result);
     }
 
+    @Test
+    public void case09() {
+        MyRange2 range = new MyRange2("[1,5]");
+        String result = range.getResult();
+        assertEquals("1,2,3,4,5", result);
+    }
+
 }
