@@ -17,7 +17,6 @@ class CalculatorTest {
                 });
     }
 
-
     @Test
     public void success_case() {
         Calculator calculator = new Calculator();
