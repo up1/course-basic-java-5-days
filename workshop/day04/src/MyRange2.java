@@ -20,4 +20,11 @@ public class MyRange2 {
     public boolean endWithKeep() {
         return this.input.endsWith("]");
     }
+
+    public int getEndNumber() {
+        if(endWithKeep()) {
+            return input.charAt(input.length() - 2) - 48;
+        }
+        return input.charAt(input.length()-2) - 1 - 48;
+    }
 }

@@ -49,4 +49,18 @@ class MyRange2Test {
         assertFalse(result);
     }
 
+    @Test
+    public void case07() {
+        MyRange2 range = new MyRange2("[1,5]");
+        int result = range.getEndNumber();
+        assertEquals(5, result);
+    }
+
+    @Test
+    public void case08() {
+        MyRange2 range = new MyRange2("[1,5)");
+        int result = range.getEndNumber();
+        assertEquals(4, result);
+    }
+
 }
