@@ -1,26 +1,42 @@
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
+import java.sql.*;
 
 public class DemoDb {
-    void getData() throws Exception {
-        // Load driver class
-        Class.forName("driver");
-        // Create connection to db
-        Connection conn
-                = DriverManager.getConnection("xyz");
-        // SQL Statement
-        PreparedStatement prepStmt
-                = conn.prepareStatement("select * from table");
-        // Get data
-        ResultSet rs = prepStmt.executeQuery();
-        while (rs.next()) {
-
+    void getData() {
+        Connection conn = null;
+        PreparedStatement prepStmt = null;
+        ResultSet rs = null;
+        try {
+            Class.forName("driver");
+            conn = DriverManager.getConnection("xyz");
+            prepStmt = conn.prepareStatement("select * from table");
+            rs = prepStmt.executeQuery();
+            while (rs.next()) {
+            }
+        } catch (Exception e) {
+        } finally {
+            try {
+                if(rs != null) {
+                    rs.close();
+                    rs = null;
+                    System.gc();
+                }
+            } catch (SQLException e) {
+                throw new RuntimeException(e);
+            }
+            try {
+                if(prepStmt != null) {
+                    prepStmt.close();
+                }
+            } catch (SQLException e) {
+                throw new RuntimeException(e);
+            }
+            try {
+                if(conn != null) {
+                    conn.close();
+                }
+            } catch (SQLException e) {
+                throw new RuntimeException(e);
+            }
         }
-        // Close resources
-        rs.close();
-        prepStmt.close();
-        conn.close();
     }
 }
