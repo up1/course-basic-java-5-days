@@ -1,4 +1,5 @@
 public class DemoError2 {
+    // Separation of Concern (SoC)
     public static void main(String[] args) {
         double result = 0;
         try {
