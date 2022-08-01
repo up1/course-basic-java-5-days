@@ -4,7 +4,7 @@ public class MyRange {
         String output = "";
         // 1, 2 [ => true, ( => false
         boolean isKeep = false;
-        if(input.charAt(0) == '[') {
+        if(input.startsWith("[")) {
             isKeep = true;
         }
         // 3. [1 => 1
