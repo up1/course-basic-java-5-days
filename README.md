@@ -63,13 +63,13 @@
     * Develop RESTful API with Java and Spring Boot
       * Spring Boot
       * Spring Boot Tesing
-    * Working with Database
-      * Normalization
-      * De-nomalization
     * Working with External APIs
       * HttpUrlConnection
       * HttpClient
       * ApacheHttpClient
       * OkHttp
       * Retrofit
+    * Working with Database
+      * Normalization
+      * De-nomalization
       
