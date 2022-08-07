@@ -7,6 +7,7 @@
   * [Slice](https://github.com/up1/course-springboot-2020/blob/main/slide/SCK-SPRING-BOOT-RESTFUL-API-WORKSHOP.pdf) 
 * Refactoring workshop
   * [Bad Code](https://github.com/up1/workshop-java-badcode) 
+  * [Tennis](https://github.com/up1/Tennis-Refactoring-Kata/tree/master/java)
 
 ## Outlines
 
