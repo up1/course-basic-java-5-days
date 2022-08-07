@@ -60,7 +60,7 @@
       * Service layer
       * Repository layer
 * Day 5
-    * Develop RESTful API with Java and Spring Boot
+    * [Develop RESTful API with Java and Spring Boot](https://github.com/up1/course-springboot-2020/wiki/Workshop-REST-API)
       * Spring Boot
       * Spring Boot Tesing
     * Working with External APIs
