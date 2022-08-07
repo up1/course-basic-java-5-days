@@ -3,6 +3,10 @@
 ## Notes
 * [Day 1](https://github.com/up1/course-basic-java-5-days/tree/master/workshop/day01/day01)
 * [List of problems](https://github.com/up1/course-basic-java-5-days/wiki/List-of-Kata)
+* [Develop REST APIs with Spring Boot]
+  * [Slice](https://github.com/up1/course-springboot-2020/blob/main/slide/SCK-SPRING-BOOT-RESTFUL-API-WORKSHOP.pdf) 
+* Refactoring workshop
+  * [Bad Code](https://github.com/up1/workshop-java-badcode) 
 
 ## Outlines
 
