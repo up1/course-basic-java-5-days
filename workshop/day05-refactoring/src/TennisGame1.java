@@ -23,14 +23,14 @@ public class TennisGame1 implements TennisGame {
         int tempScore;
         String[] scoreNames = {"Love", "Fifteen", "Thirty", "Forty"};
 
-        if (score1 == score2) {
+        if (score1 == score2) { // All + Deuce
             score = switch (score1) {
                 case 0 -> scoreNames[0] + "-All";
                 case 1 -> scoreNames[1] + "-All";
                 case 2 -> scoreNames[2] + "-All";
                 default -> "Deuce";
             };
-        } else if (score1 >= 4 || score2 >= 4) {
+        } else if (score1 >= 4 || score2 >= 4) { // Adv + Win
             int minusResult = score1 - score2;
             if (minusResult == 1) {
                 score = "Advantage " + player1Name;
@@ -41,21 +41,8 @@ public class TennisGame1 implements TennisGame {
             } else {
                 score = "Win for " + player2Name;
             }
-        } else {
-            for (int i = 1; i < 3; i++) {
-                if (i == 1) {
-                    tempScore = score1;
-                } else {
-                    score += "-";
-                    tempScore = score2;
-                }
-                switch (tempScore) {
-                    case 0 -> score += scoreNames[0];
-                    case 1 -> score += scoreNames[1];
-                    case 2 -> score += scoreNames[2];
-                    case 3 -> score += scoreNames[3];
-                }
-            }
+        } else { // Normal game
+            score = scoreNames[score1] + "-" + scoreNames[score2];
         }
         return score;
     }
