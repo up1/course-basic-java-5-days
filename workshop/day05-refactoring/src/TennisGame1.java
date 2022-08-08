@@ -21,11 +21,13 @@ public class TennisGame1 implements TennisGame {
     public String getScore() {
         String score = "";
         int tempScore;
+        String[] scoreNames = {"Love", "Fifteen", "Thirty", "Forty"};
+
         if (score1 == score2) {
             score = switch (score1) {
-                case 0 -> "Love-All";
-                case 1 -> "Fifteen-All";
-                case 2 -> "Thirty-All";
+                case 0 -> scoreNames[0] + "-All";
+                case 1 -> scoreNames[1] + "-All";
+                case 2 -> scoreNames[2] + "-All";
                 default -> "Deuce";
             };
         } else if (score1 >= 4 || score2 >= 4) {
@@ -48,10 +50,10 @@ public class TennisGame1 implements TennisGame {
                     tempScore = score2;
                 }
                 switch (tempScore) {
-                    case 0 -> score += "Love";
-                    case 1 -> score += "Fifteen";
-                    case 2 -> score += "Thirty";
-                    case 3 -> score += "Forty";
+                    case 0 -> score += scoreNames[0];
+                    case 1 -> score += scoreNames[1];
+                    case 2 -> score += scoreNames[2];
+                    case 3 -> score += scoreNames[3];
                 }
             }
         }
