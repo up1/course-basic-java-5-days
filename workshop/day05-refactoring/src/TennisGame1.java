@@ -31,7 +31,8 @@ public class TennisGame1 implements TennisGame {
             return  "Deuce";
         }
 
-        if (score1 >= 4 || score2 >= 4) { // Adv
+        if ((score1 >= 4 || score2 >= 4) &&
+                (Math.abs(score1 - score2) == 1)) { // Adv
             int minusResult = score1 - score2;
             if (minusResult == 1) {
                 score = "Advantage " + player1Name;
@@ -48,7 +49,6 @@ public class TennisGame1 implements TennisGame {
                 score = "Win for " + player2Name;
             }
         }
-
 
         else { // Normal game
             score = scoreNames[score1] + "-" + scoreNames[score2];
