@@ -23,27 +23,44 @@ public class TennisGame1 implements TennisGame {
         int tempScore;
         String[] scoreNames = {"Love", "Fifteen", "Thirty", "Forty"};
 
-        if (score1 == score2) { // All + Deuce
-            score = switch (score1) {
-                case 0 -> scoreNames[0] + "-All";
-                case 1 -> scoreNames[1] + "-All";
-                case 2 -> scoreNames[2] + "-All";
-                default -> "Deuce";
-            };
-        } else if (score1 >= 4 || score2 >= 4) { // Adv + Win
+        if (isAll()) {
+            return scoreNames[score1] + "-All";
+        }
+
+        if (IsDeuce()) {
+            return  "Deuce";
+        }
+
+        if (score1 >= 4 || score2 >= 4) { // Adv
             int minusResult = score1 - score2;
             if (minusResult == 1) {
                 score = "Advantage " + player1Name;
             } else if (minusResult == -1) {
                 score = "Advantage " + player2Name;
-            } else if (minusResult >= 2) {
+            }
+        }
+
+        if (score1 >= 4 || score2 >= 4) { // Win
+            int minusResult = score1 - score2;
+            if (minusResult >= 2) {
                 score = "Win for " + player1Name;
-            } else {
+            } else if (minusResult <= -2) {
                 score = "Win for " + player2Name;
             }
-        } else { // Normal game
+        }
+
+
+        else { // Normal game
             score = scoreNames[score1] + "-" + scoreNames[score2];
         }
         return score;
+    }
+
+    private boolean isAll() {
+        return score1 == score2 && score1 <= 2;
+    }
+
+    private boolean IsDeuce() {
+        return score1 == score2 && score1 > 2;
     }
 }
