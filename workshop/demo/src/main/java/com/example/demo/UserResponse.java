@@ -1,6 +1,6 @@
 package com.example.demo;
 
-public class User{
+public class UserResponse{
 	private int id;
 	private String name;
 	private int age;
